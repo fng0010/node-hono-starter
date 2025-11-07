@@ -1,10 +1,9 @@
-# Ignorar la carpeta de módulos local
 node_modules
 
-# Ignorar la carpeta de build local
+# Ignore local dist directory
 dist
 
-# Ignorar archivos de Docker y Git
+# Ignore docker and git files
 Dockerfile
 docker-compose.yml
 .git
