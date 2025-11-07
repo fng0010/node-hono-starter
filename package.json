@@ -1,5 +1,5 @@
 {
-    "name": "nodejs-template",
+    "name": "node-hono-starter",
     "type": "module",
     "scripts": {
         "dev": "tsx watch src/index.ts",
