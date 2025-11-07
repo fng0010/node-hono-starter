@@ -1,4 +1,14 @@
-### 🐳 Development Workflow
+## Tools
+* Docker
+* TypeScript
+* npm
+* [Hono](https://hono.dev/): web framework.
+* [Drizzle](https://orm.drizzle.team/): headless TypeScript ORM.
+* [PostgreSQL](https://www.postgresql.org/): open source object-relational database.
+* [Biome](https://biomejs.dev/): formatter and linter.
+* [Husky](https://typicode.github.io/husky/): git hooks.
+
+## 🐳 Development Workflow
 
 **Check running containers:**
 ```bash
@@ -40,11 +50,11 @@ docker compose logs -f api
 docker compose exec api npm <your-command-here>
 ```
 
-### When to rebuild your image:
+## When to rebuild your image:
 
 You must rebuild your image (`docker compose up -d --build`) when you change files that affect the container's environment, such as:
 * Installing or uninstalling packages (changes to package.json or package-lock.json).
 * Modifying the base image or adding new commands (changes to the Dockerfile).
 
-### IDE tools
+## IDE tools
 * Biome extension for VSCode or Zed.
