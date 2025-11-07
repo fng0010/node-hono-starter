@@ -1,21 +1,21 @@
-# 1. 'alpine' es una versión de Linux muy pequeña
+# 1. 'alpine' is a very small Linux version
 FROM node:20-alpine
 
-# 2. Establecer el directorio de trabajo dentro del contenedor
+# 2. Set the working directory inside the container
 WORKDIR /app
 
-# 3. Copiar los archivos de dependencias
+# 3. Copy the dependency files
 COPY package*.json ./
 
-# 4. Instalar todas las dependencias
+# 4. Install all dependencies
 RUN npm install
 
-# 5. Copiar el resto del código fuente
+# 5. Copy the rest of the source code
 COPY . .
 
-# 6. Exponer el puerto que usa tu aplicación
-# Hono/Node-server suele usar el puerto 3000 por defecto.
+# 6. Expose the port your application uses
+# Hono/Node-server usually defaults to port 3000.
 EXPOSE 3000
 
-# 7. Iniciar la app en modo 'dev'
+# 7. Start the app in 'dev' mode
 CMD [ "npm", "run", "dev" ]
