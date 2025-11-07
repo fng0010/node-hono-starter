@@ -1,0 +1,11 @@
+# Ignorar la carpeta de módulos local
+node_modules
+
+# Ignorar la carpeta de build local
+dist
+
+# Ignorar archivos de Docker y Git
+Dockerfile
+docker-compose.yml
+.git
+.gitignore
