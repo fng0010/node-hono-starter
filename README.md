@@ -2,6 +2,7 @@
 * Docker
 * TypeScript
 * npm
+* [Zod](https://zod.dev/): schema validation.
 * [Hono](https://hono.dev/): web framework.
 * [Drizzle](https://orm.drizzle.team/): headless TypeScript ORM.
 * [PostgreSQL](https://www.postgresql.org/): open source object-relational database.
