@@ -2,9 +2,9 @@ import { serve } from "@hono/node-server";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Hono } from "hono";
 
-const db = drizzle({
+const _db = drizzle({
     connection: {
-        connectionString: process.env.DATABASE_URL!,
+        connectionString: process.env.DATABASE_URL,
     },
 });
 

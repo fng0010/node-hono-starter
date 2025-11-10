@@ -8,7 +8,7 @@ async function main() {
     console.log("Initializing script...");
 
     const client = new Client({
-        connectionString: process.env.DATABASE_URL!,
+        connectionString: process.env.DATABASE_URL,
     });
 
     try {
